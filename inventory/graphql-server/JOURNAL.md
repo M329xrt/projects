@@ -15,3 +15,8 @@
 
 # Argument Destructuring in Resolvers
 - Blocker:** Initial mutation tests returned `null` or `undefined` because I tried reading variables directly from the first argument.
+# day 3 integration
+
+- Blocker: Node.js threw variable redeclaration syntax errors and import errors on boot.
+- What it was: duplicate blocks of code together inside index.js and tried to import from a filename containing a space.
+- The fix: removed duplicate variable assignments, and streamlined imports to use the decoupled 'pollingWorker.js' asset.
