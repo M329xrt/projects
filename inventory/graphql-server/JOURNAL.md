@@ -20,3 +20,5 @@
 - Blocker: Node.js threw variable redeclaration syntax errors and import errors on boot.
 - What it was: duplicate blocks of code together inside index.js and tried to import from a filename containing a space.
 - The fix: removed duplicate variable assignments, and streamlined imports to use the decoupled 'pollingWorker.js' asset.
+- // in pollingWorker.js 
+The warehouse API is mocked, so the retry/backoff branch is implemented but not triggered by a real network failure.
