@@ -46,7 +46,7 @@ export async function runPollingWorker() {
 <<<<<<< HEAD
     console.log(` Ingestion Layer: Successfully synced ${rawData.length} items to cache.`);
 =======
-    console.log(`✅ Ingestion Layer: Successfully synced ${rawData.length} items to cache.`);
+    console.log(` Ingestion Layer: Successfully synced ${rawData.length} items to cache.`);
 >>>>>>> bdd727296205a4ee26058923044e8d476a17e849
   } catch (error) {
     console.error(` Ingestion Layer Critical Error: ${error.message}`);
