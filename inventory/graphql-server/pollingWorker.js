@@ -12,7 +12,11 @@ async function fetchWithRetry(url, retries = 3, delay = 1000) {
     // In a real app, this would be: await fetch(url);
     // Simulating a successful response payload from the warehouse
     return [
+<<<<<<< HEAD
       { id: "1", sku: "NS-100", name: "Jacket", quantity: Math.floor(Math.random() * 100) },
+=======
+      { id: "1", sku: "NS-100", name: "Northstar Jacket", quantity: Math.floor(Math.random() * 100) },
+>>>>>>> bdd727296205a4ee26058923044e8d476a17e849
       { id: "2", sku: "NS-200", name: "Classic Tee", quantity: Math.floor(Math.random() * 200) }
     ];
   } catch (error) {
@@ -39,7 +43,11 @@ export async function runPollingWorker() {
       inventoryCache.set(item.sku, item);
     });
     
+<<<<<<< HEAD
     console.log(` Ingestion Layer: Successfully synced ${rawData.length} items to cache.`);
+=======
+    console.log(`✅ Ingestion Layer: Successfully synced ${rawData.length} items to cache.`);
+>>>>>>> bdd727296205a4ee26058923044e8d476a17e849
   } catch (error) {
     console.error(` Ingestion Layer Critical Error: ${error.message}`);
     // Alert system or push to an error log queue
